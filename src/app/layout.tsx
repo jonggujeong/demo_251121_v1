@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Noto_Sans_KR } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSansKr = Noto_Sans_KR({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '700', '900'],
+});
 
 export const metadata: Metadata = {
   title: "리온치과",
@@ -18,10 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <body className={notoSansKr.className}>
+        {children}
       </body>
     </html>
   );
