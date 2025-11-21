@@ -15,11 +15,11 @@ const Equipment = () => {
   ];
 
   return (
-    <section id="equipment" className="py-24 bg-gray-900 text-white">
+    <section id="equipment" className="py-24 bg-[#1a1a1a] text-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-end justify-between mb-16">
           <div className="max-w-2xl">
-             <h3 className="text-blue-400 font-bold tracking-widest uppercase mb-3">Digital Optimum</h3>
+             <h3 className="text-blue-500 font-bold tracking-[0.2em] uppercase mb-3">Digital Optimum</h3>
              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                디지털 치료 중심<br />장비기반의 최적의 진료 제공
              </h2>
@@ -27,33 +27,35 @@ const Equipment = () => {
                진단부터 진료까지, 디지털 장비로 오차를 줄인 최적화 된 진료가 가능합니다.
              </p>
           </div>
-          <button className="hidden lg:block px-8 py-3 border border-gray-600 rounded-full hover:bg-white hover:text-gray-900 transition mt-8 lg:mt-0 font-medium">
+          <button className="hidden lg:block px-8 py-3 border border-gray-500 rounded-full hover:bg-white hover:text-gray-900 transition mt-8 lg:mt-0 font-medium duration-300">
               장비 더보기 +
           </button>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
            {equipments.map((item, index) => (
-             <div key={index} className="bg-gray-800 p-6 rounded-xl hover:bg-gray-700 transition duration-300 group cursor-pointer">
-               <div className="aspect-square bg-gray-700 rounded-lg mb-4 relative overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition duration-500 p-4 bg-white"
-                  />
-                  <div className="absolute bottom-2 right-2 text-gray-500 opacity-50">
-                      <span className="text-2xl font-bold">{index + 1 < 10 ? `0${index+1}` : index+1}</span>
+             <div key={index} className="bg-[#222] p-6 rounded-xl hover:bg-[#2a2a2a] transition duration-300 group cursor-pointer border border-gray-800 hover:border-gray-700">
+               <div className="aspect-square bg-white/5 rounded-lg mb-4 relative overflow-hidden flex items-center justify-center">
+                  <div className="relative w-3/4 h-3/4">
+                     <Image
+                        src={item.image}
+                        alt={item.name}
+                        fill
+                        className="object-contain group-hover:scale-110 transition duration-500"
+                     />
+                  </div>
+                  <div className="absolute bottom-2 right-2 text-gray-700 font-bold text-xl group-hover:text-blue-500 transition">
+                      {index + 1 < 10 ? `0${index+1}` : index+1}
                   </div>
                </div>
-               <h4 className="text-lg font-bold mb-2 text-white group-hover:text-blue-400 transition">{item.name}</h4>
+               <h4 className="text-lg font-bold mb-2 text-white group-hover:text-blue-400 transition line-clamp-1">{item.name}</h4>
                <p className="text-xs text-gray-400 leading-relaxed line-clamp-3">{item.desc}</p>
              </div>
            ))}
         </div>
 
         <div className="mt-12 text-center lg:hidden">
-            <button className="px-8 py-3 border border-gray-600 rounded-full hover:bg-white hover:text-gray-900 transition font-medium text-sm">
+            <button className="px-8 py-3 border border-gray-500 rounded-full hover:bg-white hover:text-gray-900 transition font-medium text-sm">
               장비 더보기 +
             </button>
         </div>
