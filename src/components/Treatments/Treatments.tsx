@@ -70,41 +70,97 @@ const Treatments = () => {
              </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 text-center">
             <div className="group">
-                <div className="w-20 h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
-                    <span className="font-bold text-2xl">01</span>
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
+                   {/* Icon Placeholder: Implant */}
+                    <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
                 </div>
-                <h4 className="font-bold text-xl text-gray-900 mb-2">임플란트</h4>
-                <p className="text-sm text-gray-500 leading-relaxed">내비게이션<br/>뼈이식/재수술</p>
+                <h4 className="font-bold text-lg md:text-xl text-gray-900 mb-2">임플란트</h4>
+                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                   임플란트<br/>
+                   내비게이션임플란트<br/>
+                   가이드 임플란트<br/>
+                   발치즉시 임플란트<br/>
+                   재수술 임플란트<br/>
+                   뼈이식 임플란트<br/>
+                   상악동 거상술<br/>
+                   전체 임플란트<br/>
+                   임플란트 틀니
+                </p>
             </div>
              <div className="group">
-                <div className="w-20 h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
-                    <span className="font-bold text-2xl">02</span>
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
+                     {/* Icon Placeholder: Orthodontics */}
+                    <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h4 className="font-bold text-xl text-gray-900 mb-2">교정치료</h4>
-                <p className="text-sm text-gray-500 leading-relaxed">투명교정<br/>클리피씨/부분</p>
+                <h4 className="font-bold text-lg md:text-xl text-gray-900 mb-2">교정치료</h4>
+                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                   교정치료<br/>
+                   투명교정(인비절라인)<br/>
+                   클리피씨 교정<br/>
+                   세라믹 교정<br/>
+                   메탈 교정<br/>
+                   소아 교정<br/>
+                   부분 교정
+                </p>
             </div>
              <div className="group">
-                <div className="w-20 h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
-                    <span className="font-bold text-2xl">03</span>
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
+                     {/* Icon Placeholder: Pediatrics */}
+                    <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 </div>
-                <h4 className="font-bold text-xl text-gray-900 mb-2">소아진료</h4>
-                <p className="text-sm text-gray-500 leading-relaxed">영유아검진<br/>웃음가스치료</p>
+                <h4 className="font-bold text-lg md:text-xl text-gray-900 mb-2">소아진료</h4>
+                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                   소아진료<br/>
+                   영유아 구강검진<br/>
+                   학생 구강검진<br/>
+                   불소도포<br/>
+                   성장검사<br/>
+                   웃음가스치료<br/>
+                   의식하진정법
+                </p>
+            </div>
+            <div className="group">
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
+                    {/* Icon Placeholder: Dentures */}
+                    <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                </div>
+                <h4 className="font-bold text-lg md:text-xl text-gray-900 mb-2">틀니치료</h4>
+                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                   틀니치료<br/>
+                   전체 틀니<br/>
+                   부분 틀니
+                </p>
             </div>
              <div className="group">
-                <div className="w-20 h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
-                    <span className="font-bold text-2xl">04</span>
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
+                    {/* Icon Placeholder: Esthetic */}
+                   <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
                 </div>
-                <h4 className="font-bold text-xl text-gray-900 mb-2">심미치료</h4>
-                <p className="text-sm text-gray-500 leading-relaxed">라미네이트<br/>미백/잇몸성형</p>
+                <h4 className="font-bold text-lg md:text-xl text-gray-900 mb-2">심미치료</h4>
+                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                   심미치료<br/>
+                   미백치료<br/>
+                   라미네이트<br/>
+                   레진치료<br/>
+                   앞니 재치료<br/>
+                   잇몸 성형
+                </p>
             </div>
              <div className="group">
-                <div className="w-20 h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
-                    <span className="font-bold text-2xl">05</span>
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full shadow-md group-hover:shadow-lg flex items-center justify-center mb-6 text-blue-900 transition duration-300">
+                     {/* Icon Placeholder: General */}
+                    <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" /></svg>
                 </div>
-                <h4 className="font-bold text-xl text-gray-900 mb-2">일반진료</h4>
-                <p className="text-sm text-gray-500 leading-relaxed">충치/신경치료<br/>사랑니발치</p>
+                <h4 className="font-bold text-lg md:text-xl text-gray-900 mb-2">일반진료</h4>
+                <p className="text-xs md:text-sm text-gray-500 leading-relaxed">
+                   일반진료<br/>
+                   구강검진<br/>
+                   스케일링<br/>
+                   MTA 근관치료<br/>
+                   충치치료
+                </p>
             </div>
         </div>
       </div>
