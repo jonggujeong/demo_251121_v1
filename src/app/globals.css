@@ -6,8 +6,7 @@
 }
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Noto Sans KR', sans-serif;
 }
 
 @layer base {
@@ -15,7 +14,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply text-gray-800 antialiased;
+    @apply text-gray-800 antialiased font-sans;
   }
 }
 
