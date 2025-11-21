@@ -11,8 +11,13 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center z-50">
-            {/* Placeholder for Logo if not available, or text */}
-            <span className="text-2xl font-bold text-blue-900">RE:ON</span>
+            <Image
+              src="https://reondc.com/images/common/logo.svg"
+              alt="RE:ON Dental Clinic"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
         </Link>
 
         <nav className="hidden md:flex space-x-6 lg:space-x-8">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -8,18 +9,25 @@ const Footer = () => {
            {/* Brand & SNS */}
            <div className="lg:col-span-3">
              <Link href="/" className="block mb-6">
-                <span className="text-3xl font-bold text-white">RE:ON</span>
+                <Image src="https://reondc.com/images/common/logo.svg" alt="RE:ON" width={120} height={40} className="h-10 w-auto brightness-0 invert" />
              </Link>
              <div className="flex space-x-3 mb-8">
-                {/* SNS Icons with Placeholders */}
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-900 transition text-white">N</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition text-white">K</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition text-white">I</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 transition text-white">B</a>
+                <a href="https://naver.me/FXwxJG1P" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#03C75A] transition group overflow-hidden">
+                    <Image src="https://reondc.com/images/common/sns1.png" alt="Naver" width={40} height={40} className="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+                </a>
+                <a href="https://pf.kakao.com/_SGCwn" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#FEE500] transition group overflow-hidden">
+                    <Image src="https://reondc.com/images/common/sns2.png" alt="Kakao" width={40} height={40} className="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+                </a>
+                <a href="https://www.instagram.com/re_on_dentalclinic/" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#E4405F] transition group overflow-hidden">
+                    <Image src="https://reondc.com/images/common/sns4.png" alt="Instagram" width={40} height={40} className="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+                </a>
+                <a href="https://m.blog.naver.com/reondc?tab=1" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#03C75A] transition group overflow-hidden">
+                    <Image src="https://reondc.com/images/common/sns5.png" alt="Blog" width={40} height={40} className="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+                </a>
              </div>
-             <button className="w-full py-3 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition mb-2 text-center">
+             <Link href="https://naver.me/FXwxJG1P" target="_blank" className="block w-full py-3 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition mb-2 text-center">
                  오시는 길 &rarr;
-             </button>
+             </Link>
            </div>
 
            {/* Contact Info */}

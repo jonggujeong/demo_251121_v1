@@ -7,25 +7,29 @@ const cases = [
     title: "주걱턱 반대교합 환자 교정치료 증례",
     category: "교정치료",
     desc: "심미성, 기능을 동시에 개선",
-    date: "2023.10.15"
+    date: "2023.10.15",
+    image: "https://reondc.com/filedata/md_board/20250421185014_d1sDL8MI_main_60.jpg"
   },
   {
     title: "오픈바이트, 중간 교정 환자 교정치료 증례",
     category: "교정치료",
     desc: "타 의료기관 폐업, 중간 교정 이어받기",
-    date: "2023.09.20"
+    date: "2023.09.20",
+    image: "https://reondc.com/filedata/md_board/20250421161559_wSxpZXAc_main_58.jpg"
   },
   {
     title: "장기간 틀니 사용, 골 흡수가 심한 환자 임플란트",
     category: "임플란트",
     desc: "틀니 제거 후 픽스처 식립 및 보철",
-    date: "2023.08.11"
+    date: "2023.08.11",
+    image: "https://reondc.com/filedata/md_board/20250421144728_zP8lwWkI_main_57.jpg"
   },
   {
     title: "자연치 결손, 파절로 인한 환자분의 임플란트",
     category: "임플란트",
     desc: "부러지고 결손된 치아 방치하지 않고 치료",
-    date: "2023.07.05"
+    date: "2023.07.05",
+    image: "https://reondc.com/filedata/md_board/20250421135709_SsnVo5Hj_main_56.jpg"
   }
 ];
 
@@ -59,11 +63,13 @@ const ClinicalCases = () => {
             {cases.map((item, index) => (
                 <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 group cursor-pointer">
                     <div className="h-48 bg-gray-200 relative">
-                         {/* Image Placeholder */}
-                         <div className="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-400">
-                            <span>Case Image</span>
-                         </div>
-                         <div className="absolute top-4 left-4 bg-blue-900 text-white text-xs font-bold px-3 py-1 rounded-full">
+                         <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            className="object-cover transition duration-500 group-hover:scale-110"
+                         />
+                         <div className="absolute top-4 left-4 bg-blue-900 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
                              {item.category}
                          </div>
                     </div>

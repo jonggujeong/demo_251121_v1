@@ -5,31 +5,36 @@ const doctors = [
     name: '박재우 대표원장',
     specialty: '구강악안면외과 전문의, 통합치의학과 전문의',
     description: '임플란트, 사랑니발치, 신경치료, 일반진료, 턱관절치료',
-    career: ['보건복지부 인증 구강악안면외과 전문의', '보건복지부 인증 통합치의학과 전문의', '단국대학교 치의학과 졸업']
+    career: ['보건복지부 인증 구강악안면외과 전문의', '보건복지부 인증 통합치의학과 전문의', '단국대학교 치의학과 졸업'],
+    image: 'https://reondc.com/filedata/md_medical_team/20250420150619_jDywus6W_dr01.jpg'
   },
   {
     name: '기혜림 대표원장',
     specialty: '치과교정과 전문의',
     description: '투명교정, 성장기교정, 성인교정, 부분교정',
-    career: ['보건복지부 인증 치과교정과 전문의', '단국대학교 치의학과 수석 졸업', '인비절라인 투명교정 인증 치과의사']
+    career: ['보건복지부 인증 치과교정과 전문의', '단국대학교 치의학과 수석 졸업', '인비절라인 투명교정 인증 치과의사'],
+    image: 'https://reondc.com/filedata/md_medical_team/20250420154428_lXa2c1g7_dr2.jpg'
   },
   {
     name: '배지수 원장',
     specialty: '소아치과 전문의',
     description: '영유아구강검진, 충치치료, 소아교정, 웃음가스치료',
-    career: ['보건복지부 인증 소아치과 전문의', '연세대학교 치과대학 졸업', '대한소아치과학회 정회원']
+    career: ['보건복지부 인증 소아치과 전문의', '연세대학교 치과대학 졸업', '대한소아치과학회 정회원'],
+    image: 'https://reondc.com/filedata/md_medical_team/20250420154603_t4psEWoc_dr3.jpg'
   },
   {
     name: '구철홍 원장',
     specialty: '구강악안면외과 전문의, 통합치의학과 전문의',
     description: '임플란트, 틀니치료, 사랑니발치, 일반진료',
-    career: ['보건복지부 인증 구강악안면외과 전문의 (전국 수석)', '보건복지부 인증 통합치의학과 전문의', '단국대학교 치의학과 졸업']
+    career: ['보건복지부 인증 구강악안면외과 전문의 (전국 수석)', '보건복지부 인증 통합치의학과 전문의', '단국대학교 치의학과 졸업'],
+    image: 'https://reondc.com/filedata/md_medical_team/20250420154724_AZCMuPUT_dr4.jpg'
   },
   {
     name: '송지은 원장',
     specialty: '치과보철과 전문의',
     description: '임플란트, 틀니치료, 심미치료, 충치치료',
-    career: ['보건복지부 인증 치과보철과 전문의', '전남대학교 치의학전문대학원 석사/박사', '대한치과보철학회 인정의']
+    career: ['보건복지부 인증 치과보철과 전문의', '전남대학교 치의학전문대학원 석사/박사', '대한치과보철학회 인정의'],
+    image: 'https://reondc.com/filedata/md_medical_team/20250420154905_QcyzIPti_dr5.jpg'
   }
 ];
 
@@ -50,11 +55,13 @@ const MedicalTeam = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {doctors.map((doctor, index) => (
             <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 group">
-              <div className="h-80 bg-gray-200 relative overflow-hidden">
-                {/* Placeholder for Doctor Image */}
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-300 to-gray-100 flex items-center justify-center text-gray-400">
-                    <span className="text-4xl opacity-20">Doctor {index + 1}</span>
-                </div>
+              <div className="h-96 bg-gray-200 relative overflow-hidden">
+                <Image
+                    src={doctor.image}
+                    alt={doctor.name}
+                    fill
+                    className="object-cover object-top transition duration-500 group-hover:scale-105"
+                />
               </div>
               <div className="p-8">
                 <div className="flex items-end mb-2">

@@ -3,10 +3,17 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center bg-gray-100 overflow-hidden">
-      {/* Background Image Placeholder */}
       <div className="absolute inset-0 z-0">
-        {/* Using a placeholder gradient to simulate the bright and clean medical environment */}
-        <div className="w-full h-full bg-gradient-to-br from-blue-50 to-white"></div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="https://reondc.com/images/main2.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-white/60"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 flex flex-col justify-center h-full">
