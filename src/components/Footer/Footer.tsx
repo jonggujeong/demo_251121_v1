@@ -11,15 +11,14 @@ const Footer = () => {
                 <span className="text-3xl font-bold text-white">RE:ON</span>
              </Link>
              <div className="flex space-x-3 mb-8">
-                {/* SNS Icons with Placeholders */}
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-900 transition text-white">N</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-yellow-400 hover:text-black transition text-white">K</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition text-white">I</a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 transition text-white">B</a>
+                <a href="https://naver.me/FXwxJG1P" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#03C75A] transition text-white" aria-label="Naver Booking">N</a>
+                <a href="https://pf.kakao.com/_SGCwn" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#FEE500] hover:text-[#3C1E1E] transition text-white" aria-label="Kakao Chat">K</a>
+                <a href="https://www.instagram.com/re_on_dentalclinic/" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition text-white" aria-label="Instagram">I</a>
+                <a href="https://m.blog.naver.com/reondc" target="_blank" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#03C75A] transition text-white" aria-label="Blog">B</a>
              </div>
-             <button className="w-full py-3 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition mb-2 text-center">
+             <Link href="https://naver.me/FXwxJG1P" target="_blank" className="block w-full py-3 border border-gray-700 rounded-lg text-sm hover:border-gray-500 transition mb-2 text-center text-white">
                  오시는 길 &rarr;
-             </button>
+             </Link>
            </div>
 
            {/* Contact Info */}
@@ -58,10 +57,15 @@ const Footer = () => {
 
            {/* Map/Extra */}
            <div className="lg:col-span-3">
-               <div className="bg-gray-800 rounded-xl h-full min-h-[200px] flex items-center justify-center text-gray-600 text-sm">
-                   {/* Map Placeholder */}
-                   [지도 영역]
-               </div>
+               <iframe
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.0990902166543!2d127.0486003!3d37.8111003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cce8105555555%3A0x8555555555555555!2z6rK96riw64-EIOyWkeyjvOyLnCDrjZXqs4TrrowgMTMwIDTsuLggNDAxLTQwOedL!5e0!3m2!1sko!2skr!4v1635750000000!5m2!1sko!2skr"
+                 width="100%"
+                 height="200"
+                 style={{ border: 0, borderRadius: '0.75rem', filter: 'grayscale(100%) invert(92%) contrast(83%)' }}
+                 allowFullScreen
+                 loading="lazy"
+                 title="Map"
+               ></iframe>
            </div>
         </div>
 
